@@ -1,0 +1,150 @@
+<sensor>
+	<tracker>Microsoft</tracker>
+	<mirrormode>true</mirrormode>
+	<smoothing>true</smoothing>
+	<smoothingfactor>0.5</smoothingfactor>
+	<correction>0.5</correction>
+	<prediction>0.5</prediction>
+	<jitter>0.05</jitter>
+	<deviation>0.04</deviation>
+</sensor>
+<server>
+	<transformations>Global coordinates</transformations>
+	<automaticassignment>true</automaticassignment>
+</server>
+<gestures>
+	<gesture name="T-Pose OptAttache" timeout="0">
+		<input type="1">
+			<descriptor>left hand</descriptor>
+			<descriptor>to the left of</descriptor>
+			<descriptor>left shoulder</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>13</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<input type="1">
+			<descriptor>right hand</descriptor>
+			<descriptor>to the right of</descriptor>
+			<descriptor>right shoulder</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>13</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>k</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="RightHandRight R1Wep" timeout="0">
+		<input type="1">
+			<descriptor>right hand</descriptor>
+			<descriptor>to the right of</descriptor>
+			<descriptor>right shoulder</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>13</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>o</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>3</descriptor>
+		</output>
+	</gesture>
+	<gesture name="RightHandFront R1Wep" timeout="0">
+		<input type="1">
+			<descriptor>right hand</descriptor>
+			<descriptor>in front of</descriptor>
+			<descriptor>right shoulder</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>13</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>o</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="RightHandAbove TouchSkip" timeout="0">
+		<input type="1">
+			<descriptor>right hand</descriptor>
+			<descriptor>above</descriptor>
+			<descriptor>right shoulder</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>13</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>l</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="LeftHandShake" timeout="0">
+		<output type="0">
+			<descriptor>press</descriptor>
+			<descriptor>r</descriptor>
+			<descriptor>for</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="LeftHandFront L1Knife" timeout="0">
+		<input type="1">
+			<descriptor>left hand</descriptor>
+			<descriptor>in front of</descriptor>
+			<descriptor>left shoulder</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>14</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>d</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="LeftHandFrontLeft L1Circle" timeout="0">
+		<input type="1">
+			<descriptor>left hand</descriptor>
+			<descriptor>to the left of</descriptor>
+			<descriptor>left shoulder</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>13</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>p</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+	<gesture name="LeftHandAbove R2Ash tr5reset" timeout="0">
+		<input type="1">
+			<descriptor>left hand</descriptor>
+			<descriptor>above</descriptor>
+			<descriptor>left shoulder</descriptor>
+			<descriptor>at least</descriptor>
+			<descriptor>14</descriptor>
+			<descriptor>inches</descriptor>
+		</input>
+		<output type="0">
+			<descriptor>hold</descriptor>
+			<descriptor>e</descriptor>
+			<descriptor>until complete</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+		<output type="0">
+			<descriptor>press</descriptor>
+			<descriptor>F12</descriptor>
+			<descriptor>for</descriptor>
+			<descriptor>0</descriptor>
+		</output>
+	</gesture>
+</gestures>

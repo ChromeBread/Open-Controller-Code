@@ -1,3 +1,3 @@
-1. I can't take responsibility
-2. Go offline
-3. Don't ask me
+A. I can't take responsibility
+B. Go offline
+C. Don't ask me

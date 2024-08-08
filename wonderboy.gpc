@@ -1,0 +1,51 @@
+#pragma METAINFO("wonderboy 1/2", 1, 0, "CB")
+main{
+	if(get_val(BUTTON_10) && get_val(BUTTON_7)) { 
+		macro_run("11.gmk");
+	}
+	if(get_val(BUTTON_10) && get_val(BUTTON_8)) { 
+		macro_run("12t.gmk");
+	}
+		if(get_val(BUTTON_10) && get_val(BUTTON_4)) { 
+		macro_run("13t.gmk");
+	}
+		if(get_val(BUTTON_10) && get_val(BUTTON_5)) { 
+		macro_run("14.gmk");
+	}
+		if(get_val(BUTTON_10) && get_val(BUTTON_9)) { 
+		macro_run("21t.gmk");
+	}
+		if(get_val(BUTTON_10) && get_val(BUTTON_6)) { 
+		macro_run("22t.gmk");
+	}
+		if(get_val(BUTTON_10) && get_val(BUTTON_16)) { 
+		macro_run("23t.gmk");
+	}
+		if(get_val(BUTTON_10) && get_val(BUTTON_15)) { 
+		macro_run("24.gmk");
+	}
+		if(get_val(BUTTON_11) && get_val(BUTTON_7)) { 
+		macro_run("31t.gmk");
+	}
+		if(get_val(BUTTON_11) && get_val(BUTTON_8)) { 
+		macro_run("32t.gmk");
+	}
+		if(get_val(BUTTON_11) && get_val(BUTTON_4)) { 
+		macro_run("33t.gmk");
+	}
+		if(get_val(BUTTON_11) && get_val(BUTTON_5)) { 
+		macro_run("34t.gmk");
+	}
+		if(get_val(BUTTON_11) && get_val(BUTTON_9)) { 
+		macro_run("41t.gmk");
+	}
+		if(get_val(BUTTON_11) && get_val(BUTTON_6)) { 
+		macro_run("42t.gmk");
+	}
+		if(get_val(BUTTON_11) && get_val(BUTTON_16)) { 
+		macro_run("43t.gmk");
+	}
+		if(get_val(BUTTON_11) && get_val(BUTTON_15)) { 
+		macro_run("44t.gmk");
+	}
+}

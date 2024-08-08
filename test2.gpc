@@ -1,0 +1,23 @@
+#pragma METAINFO("DS3_2_ACMochi", 1, 0, "CB")
+main {
+	set_val(STICK_1_Y, inv(get_val(STICK_1_Y)));
+	set_val(STICK_2_Y, inv(get_val(STICK_2_Y)));
+	set_val(STICK_1_X, inv(get_val(STICK_1_X)));
+	set_val(STICK_2_X, inv(get_val(STICK_2_X)));
+}
+#include <remapper.gph>
+const uint8 MappingLayout[43] = {
+    RMP_USB_B,
+    BUTTON_1,  BUTTON_2,  BUTTON_3,  BUTTON_4,  BUTTON_5,  BUTTON_6,  BUTTON_7, 
+    BUTTON_8,  BUTTON_9,  BUTTON_11, BUTTON_10, BUTTON_13, BUTTON_12, BUTTON_14, 
+    BUTTON_15, BUTTON_16, BUTTON_17, BUTTON_18, BUTTON_19, BUTTON_20, BUTTON_21, 
+    STICK_2_X, STICK_2_Y, STICK_1_X, STICK_1_Y, 
+    POINT_1_X, POINT_1_Y, POINT_2_X, POINT_2_Y, 
+    ACCEL_1_X, ACCEL_1_Y, ACCEL_1_Z, ACCEL_2_X, ACCEL_2_Y, ACCEL_2_Z, 
+    GYRO_1_X,  GYRO_1_Y,  GYRO_1_Z,
+    PADDLE_1,  PADDLE_2,  PADDLE_3,  PADDLE_4
+};
+init { 
+    // using the controller on Input-B
+    remapper(MappingLayout);
+}

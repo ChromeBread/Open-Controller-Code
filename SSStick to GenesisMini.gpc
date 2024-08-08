@@ -1,0 +1,15 @@
+#pragma METAINFO("SSStick_to_AstroMini", 1, 0, "CB")
+init {
+	// R to Credit(MODE)
+	remapper_swap(BUTTON_5, BUTTON_2);
+	// L is Not
+	remapper_disable(BUTTON_4);
+	// A to A
+	remapper_swap(BUTTON_17, BUTTON_15);
+	// C to C
+	remapper_swap(BUTTON_15, BUTTON_4);
+	// Y to Y
+	remapper_swap(BUTTON_7, BUTTON_17);
+	// Z to Z
+	remapper_swap(BUTTON_8, BUTTON_7);
+}

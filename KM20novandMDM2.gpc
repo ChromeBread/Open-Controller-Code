@@ -1,0 +1,56 @@
+#pragma METAINFO("KM20novMDM2", 1, 0, "CB")
+#include <keyboard.gph>
+init {
+    // Load an Keyboard Mapping to reproduce Input-A
+    const uint8 map[] = {
+		KEY_TAB,          BUTTON_16,
+KEY_UPARROW,          STICK_2_Y | KEYMAP_NEGATIVE,
+		KEY_DOWNARROW,          STICK_2_Y,
+				KEY_1,          BUTTON_17,
+				KEY_2,          BUTTON_14,
+		KEY_F1,          BUTTON_3,
+		KEY_F2,          BUTTON_2,
+        KEY_A,          BUTTON_7, 
+        KEY_B,          BUTTON_4,
+        KEY_C,          BUTTON_7, 
+        KEY_D,          BUTTON_16, 
+        KEY_E,          BUTTON_17,
+        KEY_F,   		BUTTON_12,
+        KEY_G,          BUTTON_15,
+        KEY_H,  		BUTTON_15,
+        KEY_I,          STICK_2_X | KEYMAP_NEGATIVE,
+        KEY_J,          STICK_2_X, 
+        KEY_K,          BUTTON_2, 
+        KEY_L,          BUTTON_3, 
+        KEY_M,          BUTTON_17, 
+        KEY_N,          BUTTON_14, 
+        KEY_O,          BUTTON_7, 
+        KEY_P,			BUTTON_4, 
+        KEY_Q,          BUTTON_15, 
+        KEY_R,          BUTTON_16, 
+        KEY_S,          BUTTON_10,  
+        KEY_T,          BUTTON_11, 	
+        KEY_U,          BUTTON_12, 
+        KEY_V,          BUTTON_13, 
+        KEY_W,          BUTTON_4,
+        KEY_X,          BUTTON_2, 
+        KEY_Y,          BUTTON_1, 
+    };
+    keymapping(map);
+}
+#include <remapper.gph>
+const uint8 MappingLayout[43] = {
+    RMP_USB_B,
+    BUTTON_1,  BUTTON_2,  BUTTON_3,  BUTTON_4,  BUTTON_5,  BUTTON_6,  BUTTON_7, 
+    BUTTON_8,  BUTTON_9,  BUTTON_10, BUTTON_11, BUTTON_12, BUTTON_13, BUTTON_14, 
+    BUTTON_15, BUTTON_16, BUTTON_17, BUTTON_18, BUTTON_19, BUTTON_20, BUTTON_21, 
+    STICK_1_X, STICK_1_Y, STICK_2_X, STICK_2_Y, 
+    POINT_1_X, POINT_1_Y, POINT_2_X, POINT_2_Y, 
+    ACCEL_1_X, ACCEL_1_Y, ACCEL_1_Z, ACCEL_2_X, ACCEL_2_Y, ACCEL_2_Z, 
+    GYRO_1_X,  GYRO_1_Y,  GYRO_1_Z,
+    PADDLE_1,  PADDLE_2,  PADDLE_3,  PADDLE_4
+};
+init { 
+    // using the controller on Input-B
+    remapper(MappingLayout);
+}

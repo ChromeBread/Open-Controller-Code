@@ -1,0 +1,11 @@
+#pragma METAINFO("sor4shivaMacroloop", 1, 0, "CB")
+main{
+		if(event_active(BUTTON_9)) macro_run("sor4shiv.gmk");
+}
+bool bplay=FALSE;
+main {
+    if(event_active(BUTTON_6)) { // Run the Macro once.
+		bplay=!bplay;
+	}
+	if(bplay) macro_run("sor4shiv.gmk");
+}
